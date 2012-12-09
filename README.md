@@ -60,3 +60,15 @@ Then run:
 To launch mongo on startup:
 
 `ln -sfv /usr/local/opt/mongodb/*.plist ~/Library/LaunchAgents`
+
+### Redis
+
+`brew install redis`
+
+To launch on startup:
+
+`ln -sfv /usr/local/opt/redis/*.plist ~/Library/LaunchAgents`
+
+### Imagemagick
+
+`brew install imagemagick`
