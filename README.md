@@ -72,3 +72,7 @@ To launch on startup:
 ### Imagemagick
 
 `brew install imagemagick`
+
+### Node.js
+
+[http://nodejs.org/](http://nodejs.org/)
