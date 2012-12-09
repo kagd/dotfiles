@@ -2,11 +2,11 @@
 
 ### Chrome
 
-(https://www.google.com/intl/en/chrome/browser/)[https://www.google.com/intl/en/chrome/browser/]
+[https://www.google.com/intl/en/chrome/browser/](https://www.google.com/intl/en/chrome/browser/)
 
 ### Sublime Text 2
 
-(http://www.sublimetext.com/2)[http://www.sublimetext.com/2]
+[http://www.sublimetext.com/2](http://www.sublimetext.com/2)
 
 ### SSH Keys
 
@@ -27,20 +27,20 @@ source bootstrap.sh
 
 ### Xcode Commandline Tools
 
-(https://developer.apple.com/downloads/index.action)[https://developer.apple.com/downloads/index.action]
+[https://developer.apple.com/downloads/index.action](https://developer.apple.com/downloads/index.action)
 
 ### Homebrew
 
-`ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"` - (website)[http://mxcl.github.com/homebrew/]
+`ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"` - [website](http://mxcl.github.com/homebrew/)
 `brew doctor`
 
 ### Rails Installer
 
-(http://railsinstaller.org/#osx)[http://railsinstaller.org/#osx]
+[http://railsinstaller.org/#osx](http://railsinstaller.org/#osx)
 
 ### Heroku Toolbelt
 
-(https://toolbelt.heroku.com/)[https://toolbelt.heroku.com/]
+[https://toolbelt.heroku.com/](https://toolbelt.heroku.com/)
 
 ### Heroku Multiple Accounts
 
