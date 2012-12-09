@@ -52,3 +52,11 @@ Then run:
 `heroku accounts:add personal --auto`
 
 `heroku accounts:set personal`
+
+### MongoDB
+
+`brew install mongodb`
+
+To launch mongo on startup:
+
+`ln -sfv /usr/local/opt/mongodb/*.plist ~/Library/LaunchAgents`
