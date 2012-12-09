@@ -29,9 +29,12 @@ source bootstrap.sh
 
 [https://developer.apple.com/downloads/index.action](https://developer.apple.com/downloads/index.action)
 
-### Homebrew
+### Homebrew - [website](http://mxcl.github.com/homebrew/)
 
-`ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"` - [website](http://mxcl.github.com/homebrew/)
+`ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"`
+
+Then run:
+
 `brew doctor`
 
 ### Rails Installer
