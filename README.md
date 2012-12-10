@@ -18,7 +18,7 @@ import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_p
 
 ##### Packages to install
 
-`alignment`, `jsFormat`, `SublimeLinter`, `JsMinifier`, `BracketHighlighter`, `git`, `coffeescript`, `ERB Snippets`
+`alignment`, `jsFormat`, `SublimeLinter`, `JsMinifier`, `BracketHighlighter`, `git`, `coffeescript`, `ERB Insert and Toggle Commands`
 
 ### SSH Keys
 
