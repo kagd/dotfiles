@@ -20,6 +20,18 @@ import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_p
 
 `alignment`, `jsFormat`, `SublimeLinter`, `JsMinifier`, `BracketHighlighter`, `git`, `coffeescript`, `ERB Insert and Toggle Commands`
 
+Insert into User Key Bindings:
+
+```
+[
+  { "keys": ["ctrl+shift+."], "command": "erb", "context":
+    [
+      { "key": "selector", "operator": "equal", "operand": "text.html.ruby, text.haml, source.yaml, source.css, source.scss, source.js, source.coffee" }
+    ]
+  }
+]
+```
+
 ### SSH Keys
 
 `ssh-keygen -t rsa -C "your_email@youremail.com"`
