@@ -85,6 +85,10 @@ To launch mongo on startup:
 
 `ln -sfv /usr/local/opt/mongodb/*.plist ~/Library/LaunchAgents`
 
+### MongoHub
+
+[http://mongohub.todayclose.com/download](http://mongohub.todayclose.com/download)
+
 ### Redis
 
 `brew install redis`
