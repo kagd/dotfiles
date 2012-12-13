@@ -55,3 +55,8 @@ tell application "Reminders"
 end tell
 EOF
 }
+
+# shortcut for rake routes | grep '$word'
+function routes() {
+  "rake routes | grep $@"
+}
