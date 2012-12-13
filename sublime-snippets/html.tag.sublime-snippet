@@ -1,0 +1,5 @@
+<snippet>
+	<content><![CDATA[<${1:h1}>$0</${1/ [\w\d:=-]*//g}>]]></content>
+	<tabTrigger>t</tabTrigger>
+	<scope>text.html</scope>
+</snippet>
