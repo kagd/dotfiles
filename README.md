@@ -18,7 +18,7 @@ import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_p
 
 ##### Packages to install
 
-`alignment`, `jsFormat`, `SublimeLinter`, `JsMinifier`, `BracketHighlighter`, `git`, `coffeescript`, `ERB Insert and Toggle Commands`, `SCSS`
+`alignment`, `jsFormat`, `SublimeLinter`, `JsMinifier`, `git`, `coffeescript`, `ERB Insert and Toggle Commands`, `SCSS`, `LESS`
 
 Insert into User Key Bindings:
 
