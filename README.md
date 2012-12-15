@@ -104,3 +104,11 @@ To launch on startup:
 ### Node.js
 
 [http://nodejs.org/](http://nodejs.org/)
+
+#### Jake
+
+`npm install -g jake`
+
+### Filezilla
+
+[http://filezilla-project.org/](http://filezilla-project.org/)
