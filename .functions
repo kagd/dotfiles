@@ -56,7 +56,7 @@ end tell
 EOF
 }
 
-# shortcut for rake routes | grep '$word'
+# shortcut for bundle exec rake routes | grep '$word'
 function routes() {
-  rake routes | grep "$@"
+  bundle exec rake routes | grep "$@"
 }
