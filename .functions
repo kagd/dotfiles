@@ -57,6 +57,11 @@ EOF
 }
 
 # shortcut for bundle exec rake routes | grep '$word'
+# with or without arguments
 function routes() {
-  bundle exec rake routes | grep "$@"
+  if [[ -n "$@" ]]; then
+    bundle exec rake routes | grep "$@"
+  else
+    bundle exec rake routes
+  fi
 }
