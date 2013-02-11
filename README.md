@@ -4,9 +4,9 @@
 
 [https://www.google.com/intl/en/chrome/browser/](https://www.google.com/intl/en/chrome/browser/)
 
-### Sublime Text 2
+### Sublime Text 3
 
-[http://www.sublimetext.com/2](http://www.sublimetext.com/2)
+[http://www.sublimetext.com/3](http://www.sublimetext.com/3)
 
 #### Package Control
 
