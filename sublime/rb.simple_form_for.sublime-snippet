@@ -6,6 +6,6 @@
   </div>
 <% end %>
 ]]></content>
-  <tabTrigger>simpleform</tabTrigger>
+  <tabTrigger>sff</tabTrigger>
   <scope>text.html.ruby</scope>
 </snippet>
