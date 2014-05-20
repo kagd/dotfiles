@@ -50,3 +50,8 @@
 [merge]
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
+[user]
+	name = Grant Klinsing
+	email = grant@grantrklinsing.com
+[mergetool]
+	keepBackup = true

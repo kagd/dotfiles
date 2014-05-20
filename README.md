@@ -10,27 +10,11 @@
 
 #### Package Control
 
-Installation is through the Sublime Text 2 console. This is accessed via the ctrl+` shortcut. Once open, paste the following command into the console:
-
-```
-import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print 'Please restart Sublime Text to finish installation'
-```
+[https://sublime.wbond.net/installation](https://sublime.wbond.net/installation)
 
 ##### Packages to install
 
-`alignment`, `jsFormat`, `SublimeLinter`, `JsMinifier`, `git`, `coffeescript`, `ERB Insert and Toggle Commands`, `SCSS`, `LESS`
-
-Insert into User Key Bindings:
-
-```
-[
-  { "keys": ["ctrl+shift+."], "command": "erb", "context":
-    [
-      { "key": "selector", "operator": "equal", "operand": "text.html.ruby, text.haml, source.yaml, source.css, source.scss, source.js, source.coffee" }
-    ]
-  }
-]
-```
+`alignment`, `jsFormat`, `SublimeLinter`, `Better Coffeescript`, `SCSS`, `LESS`, `Ruby Slim`
 
 ### SSH Keys
 
@@ -49,9 +33,23 @@ cd dotfiles
 source bootstrap.sh
 ```
 
+### rbenv
+
+Use the git clones instead of Homebrew. The Homebrew install gave me issues.
+
+[https://github.com/sstephenson/rbenv](https://github.com/sstephenson/rbenv)
+
+##### ruby-build
+
+[https://github.com/sstephenson/ruby-build](https://github.com/sstephenson/ruby-build)
+
 ### Xcode Commandline Tools
 
 [https://developer.apple.com/downloads/index.action](https://developer.apple.com/downloads/index.action)
+
+### Postgres App
+
+[http://postgresapp.com/](http://postgresapp.com/)
 
 ### Homebrew - [website](http://mxcl.github.com/homebrew/)
 
@@ -105,10 +103,3 @@ To launch on startup:
 
 [http://nodejs.org/](http://nodejs.org/)
 
-#### Jake
-
-`npm install -g jake`
-
-### Filezilla
-
-[http://filezilla-project.org/](http://filezilla-project.org/)

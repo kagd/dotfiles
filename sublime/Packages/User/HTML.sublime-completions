@@ -1,0 +1,8 @@
+{
+  "scope": "text.html - source - meta.tag, punctuation.definition.tag.begin",
+
+  "completions":
+  [
+    { "trigger": "div", "contents": "<div${1: class=\"$2\"}>$0</div>" }
+  ]
+}
