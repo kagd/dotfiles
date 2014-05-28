@@ -1,28 +1,94 @@
 # Create a new directory and enter it
 function mkd() {
-	mkdir -p "$@" && cd "$@"
+  mkdir -p "$@" && cd "$@"
 }
 
 # Determine size of a file or total size of a directory
 function fs() {
-	if du -b /dev/null > /dev/null 2>&1; then
-		local arg=-sbh
-	else
-		local arg=-sh
-	fi
-	if [[ -n "$@" ]]; then
-		du $arg -- "$@"
-	else
-		du $arg .[^.]* *
-	fi
+  if du -b /dev/null > /dev/null 2>&1; then
+    local arg=-sbh
+  else
+    local arg=-sh
+  fi
+  if [[ -n "$@" ]]; then
+    du $arg -- "$@"
+  else
+    du $arg .[^.]* *
+  fi
+}
+
+# Add note to Notes.app (OS X 10.8)
+# Usage: `note 'foo'` or `echo 'foo' | note`
+function note() {
+  local text
+  if [ -t 0 ]; then # argument
+    text="$1"
+  else # pipe
+    text=$(cat)
+  fi
+  body=$(echo "$text" | sed -E 's|$|<br>|g')
+  osascript >/dev/null <<EOF
+tell application "Notes"
+  tell account "iCloud"
+    tell folder "Notes"
+      make new note with properties {name:"$text", body:"$body"}
+    end tell
+  end tell
+end tell
+EOF
+}
+
+# Add reminder to Reminders.app (OS X 10.8)
+# Usage: `remind 'foo'` or `echo 'foo' | remind`
+function remind() {
+  local text
+  if [ -t 0 ]; then
+    text="$1" # argument
+  else
+    text=$(cat) # pipe
+  fi
+  osascript >/dev/null <<EOF
+tell application "Reminders"
+  tell the default list
+    make new reminder with properties {name:"$text"}
+  end tell
+end tell
+EOF
+}
+
+# shortcut for bundle exec rake
+# with or without arguments
+function rake() {
+  if [[ -n "$@" ]]; then
+    echo -e "running as: 'bundle exec rake $@'\n"
+    bundle exec "rake $@"
+  else
+    echo -e "running as: 'bundle exec rake'\n"
+    bundle exec rake
+  fi
 }
 
 # shortcut for bundle exec rake routes | grep '$word'
 # with or without arguments
 function routes() {
+  # echo [[ -n "$@" ]]
   if [[ -n "$@" ]]; then
-    bundle exec rake routes | grep "$@"
+    # echo -e "running as: 1 bundle exec rake routes | grep $@\n"
+    rake "routes | grep $@"
   else
-    bundle exec rake routes
+    # echo -e "running as: bundle exec rake routes\n"
+    rake routes
+  fi
+}
+
+# shortcut for bundle exec rspec
+# with or without arguments
+function rspec() {
+  if [[ -n "$@" ]]; then
+    echo -e "running as: 'bundle exec rspec $@'\n"
+    bundle exec rspec "$@"
+  else
+    echo -e "running as: 'bundle exec rspec'\n"
+    bundle exec rspec
   fi
 }
