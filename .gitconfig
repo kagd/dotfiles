@@ -27,9 +27,8 @@
 	undopush = push -f origin HEAD^:master
 
 [core]
-	# Use custom `.gitignore` and `.gitattributes`
+	# Use custom `.gitignore`
 	excludesfile = ~/.gitignore
-	attributesfile = ~/.gitattributes
 
 [color]
 	# Use colors in Git commands that are capable of colored output when outputting to the terminal
