@@ -1,5 +1,7 @@
 # Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
+export PATH="$HOME/bin:$PATH:/usr/local/sbin"
+# export PATH="$HOME/.rbenv/bin:$PATH" # removed since switching to RVM
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
@@ -29,4 +31,32 @@ export LANG="en_US"
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall
 
 # If possible, add tab completion for many more commands
-[ -f /etc/bash_completion ] && source /etc/bash_completion
+[ -f /etc/bash_completion ] && source /etc/bash_completion[[ -s /Users/gklinsing/.nvm/nvm.sh ]] && . /Users/gklinsing/.nvm/nvm.sh # This loads NVM
+
+# add Node Version Manager to bash
+# . ~/.nvm/nvm.sh
+
+# setup postgres paths
+export PGHOST=localhost
+PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
+
+# rbenv - https://github.com/sstephenson/rbenv
+# eval "$(rbenv init -)" # removed since switching to RVM
+
+# [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+# Load RVM into a shell session *as a function*
+if [[ -s "$HOME/.rvm/scripts/rvm" ]] ; then
+
+	# First try to load from a user install
+	source "$HOME/.rvm/scripts/rvm"
+
+elif [[ -s "/usr/local/rvm/scripts/rvm" ]] ; then
+
+	# Then try to load from a root install
+	source "/usr/local/rvm/scripts/rvm"
+
+else
+
+	printf "ERROR: An RVM installation was not found.\n"
+
+fi

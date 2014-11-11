@@ -1,10 +1,11 @@
 # Easier navigation
 alias ..="cd .."
 alias ...="cd ../../"
+alias ....="cd ../../../"
 
 # Shortcuts
 alias g="git"
-alias s="subl ."
+alias a="atom ."
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -44,4 +45,12 @@ alias spotoff="sudo mdutil -a -i off"
 alias spoton="sudo mdutil -a -i on"
 
 # Ruby/Rails
-alias start="foreman start"
+alias start="bundle exec foreman start"
+alias rake="bundle exec rake"
+alias guard="bundle exec guard"
+alias routes="rake routes | grep"
+alias rspec="bundle exec rspec"
+alias console="bundle exec foreman run rails console"
+
+# Postgres
+alias psql="'/Applications/Postgres.app/Contents/Versions/9.3/bin'/psql -p5432"

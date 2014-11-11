@@ -4,17 +4,9 @@
 
 [https://www.google.com/intl/en/chrome/browser/](https://www.google.com/intl/en/chrome/browser/)
 
-### Sublime Text 3
+### Atom
 
-[http://www.sublimetext.com/3](http://www.sublimetext.com/3)
-
-#### Package Control
-
-[https://sublime.wbond.net/installation](https://sublime.wbond.net/installation)
-
-##### Packages to install
-
-`alignment`, `jsFormat`, `SublimeLinter`, `Better Coffeescript`, `SCSS`, `LESS`, `Ruby Slim`
+[https://atom.io/](https://atom.io/)
 
 ### SSH Keys
 
@@ -33,17 +25,13 @@ cd dotfiles
 source bootstrap.sh
 ```
 
-### rbenv
+### RVM
 
-Use the git clones instead of Homebrew. The Homebrew install gave me issues.
-
-[https://github.com/sstephenson/rbenv](https://github.com/sstephenson/rbenv)
-
-##### ruby-build
-
-[https://github.com/sstephenson/ruby-build](https://github.com/sstephenson/ruby-build)
+[http://rvm.io/](http://rvm.io/)
 
 ### Xcode Commandline Tools
+
+Not sure if these are needed anymore
 
 [https://developer.apple.com/downloads/index.action](https://developer.apple.com/downloads/index.action)
 
@@ -106,4 +94,3 @@ To launch on startup:
 ### Markdown in OSX
 
 [http://jamesmoss.co.uk/blog/support-for-markdown-in-osx-quicklook/](http://jamesmoss.co.uk/blog/support-for-markdown-in-osx-quicklook/)
-
