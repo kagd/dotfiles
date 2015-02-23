@@ -1,5 +1,0 @@
-<snippet>
-  <content><![CDATA[<%= f.input :${1:field_name} %>]]></content>
-  <tabTrigger>finput</tabTrigger>
-  <scope>text.html.ruby</scope>
-</snippet>
