@@ -2,6 +2,7 @@
 alias ..="cd .."
 alias ...="cd ../../"
 alias ....="cd ../../../"
+alias .....="cd ../../../../"
 
 # Shortcuts
 alias g="git"
@@ -48,7 +49,7 @@ alias spoton="sudo mdutil -a -i on"
 alias start="bundle exec foreman start"
 alias rake="bundle exec rake"
 alias guard="bundle exec guard"
-alias routes="rake routes | grep"
+alias routes="rake routes"
 alias rspec="bundle exec rspec"
 alias console="bundle exec foreman run rails console"
 
