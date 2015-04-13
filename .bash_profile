@@ -60,3 +60,5 @@ else
 	printf "ERROR: An RVM installation was not found.\n"
 
 fi
+
+goto_code

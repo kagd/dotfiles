@@ -16,3 +16,7 @@ function fs() {
     du $arg .[^.]* *
   fi
 }
+
+function goto_code(){
+  cd ~/Code/
+}
