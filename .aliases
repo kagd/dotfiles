@@ -47,11 +47,11 @@ alias spoton="sudo mdutil -a -i on"
 
 # Ruby/Rails
 alias start="bundle exec foreman start"
-alias rake="bundle exec rake"
+alias rake="bundle exec foreman run rake"
 alias guard="bundle exec guard"
-alias routes="bundle exec rake routes"
-alias route="bundle exec rake routes | grep"
-alias rspec="bundle exec rspec"
+alias routes="bundle exec foreman run rake routes"
+alias route="bundle exec foreman run rake routes | grep"
+alias rspec="bundle exec foreman run rspec"
 alias console="bundle exec foreman run rails console"
 
 # Postgres
