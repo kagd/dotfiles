@@ -55,4 +55,4 @@ alias rspec="bundle exec foreman run rspec"
 alias console="bundle exec foreman run rails console"
 
 # Postgres
-alias psql="'/Applications/Postgres.app/Contents/Versions/9.3/bin'/psql -p5432"
+alias psql="'/Applications/Postgres.app/Contents/Versions/9.4/bin'/psql -p5432"
