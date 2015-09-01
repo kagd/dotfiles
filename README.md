@@ -91,7 +91,3 @@ To launch on startup:
 ### Node.js
 
 [http://nodejs.org/](http://nodejs.org/)
-
-### Markdown in OSX
-
-[http://jamesmoss.co.uk/blog/support-for-markdown-in-osx-quicklook/](http://jamesmoss.co.uk/blog/support-for-markdown-in-osx-quicklook/)
