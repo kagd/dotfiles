@@ -8,6 +8,11 @@
 
 [https://atom.io/](https://atom.io/)
 
+##### Atom Packages/Themes
+- seti-ui
+- ruby-slim
+- atom-beautify
+
 ### SSH Keys
 
 `ssh-keygen -t rsa -C "your_email@youremail.com"`
