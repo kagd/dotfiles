@@ -18,16 +18,17 @@ Copy key to clipboard
 Add key to Github
 `https://github.com/settings/ssh`
 
+### RVM
+
+[http://rvm.io/](http://rvm.io/)
+
 ### Terminal
+
 ```
 git clone https://github.com/kagd/dotfiles
 cd dotfiles
 source bootstrap.sh
 ```
-
-### RVM
-
-[http://rvm.io/](http://rvm.io/)
 
 ### Xcode Commandline Tools
 
