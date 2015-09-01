@@ -10,6 +10,7 @@
 
 ##### Atom Packages/Themes
 - seti-ui
+- monokai (theme)
 - ruby-slim
 - atom-beautify
 
