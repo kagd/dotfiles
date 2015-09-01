@@ -14,6 +14,9 @@
 - ruby-slim
 - atom-beautify
 
+##### Atom Snippets
+Open settings then open config folder: [Snippets here](https://github.com/kagd/dotfiles/blob/master/init/snippets.cson)
+
 ### SSH Keys
 
 `ssh-keygen -t rsa -C "your_email@youremail.com"`
