@@ -38,7 +38,7 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 
 # setup postgres paths
 export PGHOST=localhost
-PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
+PATH="/Applications/Postgres.app/Contents/Versions/9.5/bin:$PATH"
 
 # rbenv - https://github.com/sstephenson/rbenv
 # eval "$(rbenv init -)" # removed since switching to RVM
