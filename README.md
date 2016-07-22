@@ -39,6 +39,10 @@ cd dotfiles
 source bootstrap.sh
 ```
 
+### git
+Follow the instructions here for git autocomplete
+[https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks](https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks)
+
 ### Xcode Commandline Tools
 
 Not sure if these are needed anymore
