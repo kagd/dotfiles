@@ -4,15 +4,20 @@
 
 [https://www.google.com/intl/en/chrome/browser/](https://www.google.com/intl/en/chrome/browser/)
 
-### Atom
+### VS Code
 
-[https://atom.io/](https://atom.io/)
+[https://code.visualstudio.com/](https://code.visualstudio.com/)
 
 ##### Atom Packages/Themes
-- seti-ui
-- monokai (theme)
-- ruby-slim
-- atom-beautify
+- Align
+- Beautify
+- EditorConfig for VSCode
+- ESlint
+- grant-monokai
+- Prettify JSON
+- Seti-theme
+- theme-dark-monokai
+- TSLint
 
 ##### Atom Snippets
 Open settings then open config folder: [Snippets here](https://github.com/kagd/dotfiles/blob/master/init/snippets.cson)
@@ -43,12 +48,6 @@ source bootstrap.sh
 Follow the instructions here for git autocomplete
 [https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks](https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks)
 
-### Xcode Commandline Tools
-
-Not sure if these are needed anymore
-
-[https://developer.apple.com/downloads/index.action](https://developer.apple.com/downloads/index.action)
-
 ### Postgres App
 
 [http://postgresapp.com/](http://postgresapp.com/)
@@ -68,46 +67,3 @@ Then run:
 
 `brew doctor`
 
-### Rails Installer
-
-[http://railsinstaller.org/#osx](http://railsinstaller.org/#osx)
-
-### Heroku Toolbelt
-
-[https://toolbelt.heroku.com/](https://toolbelt.heroku.com/)
-
-### Heroku Multiple Accounts
-
-`heroku plugins:install git://github.com/ddollar/heroku-accounts.git`
-
-`heroku accounts:add personal --auto`
-
-`heroku accounts:set personal`
-
-### MongoDB
-
-`brew install mongodb`
-
-To launch mongo on startup:
-
-`ln -sfv /usr/local/opt/mongodb/*.plist ~/Library/LaunchAgents`
-
-### MongoHub
-
-[http://mongohub.todayclose.com/download](http://mongohub.todayclose.com/download)
-
-### Redis
-
-`brew install redis`
-
-To launch on startup:
-
-`ln -sfv /usr/local/opt/redis/*.plist ~/Library/LaunchAgents`
-
-### Imagemagick
-
-`brew install imagemagick`
-
-### Node.js
-
-[http://nodejs.org/](http://nodejs.org/)
