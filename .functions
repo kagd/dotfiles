@@ -20,3 +20,17 @@ function fs() {
 function goto_code(){
   cd ~/Code/
 }
+
+function wipe(){
+	read -n 1 -p "Wipe all uncommited changes? (Y/n)? " answer
+	[ -z "$answer" ] && answer="Y"
+
+	case ${answer:0:1} in
+    y|Y )
+        git cleanout
+    ;;
+    * )
+        printf "\nNo cleanout issued\n"
+    ;;
+	esac
+}
