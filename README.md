@@ -8,7 +8,7 @@
 
 [https://code.visualstudio.com/](https://code.visualstudio.com/)
 
-##### Atom Packages/Themes
+##### VS Code Packages/Themes
 - Align
 - Auto Import - ES^, TS, JSX, TSX
 - Beautify
