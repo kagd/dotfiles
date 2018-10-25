@@ -4,10 +4,6 @@ alias ...="cd ../../"
 alias ....="cd ../../../"
 alias .....="cd ../../../../"
 
-# Shortcuts
-alias g="git"
-alias a="atom ."
-
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"
@@ -44,15 +40,6 @@ alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && k
 alias spotoff="sudo mdutil -a -i off"
 # Enable Spotlight
 alias spoton="sudo mdutil -a -i on"
-
-# Ruby/Rails
-alias start="bundle exec foreman start"
-alias rake="bundle exec foreman run rake"
-alias guard="bundle exec guard"
-alias routes="bundle exec foreman run rake routes"
-alias route="bundle exec foreman run rake routes | grep"
-alias rspec="bundle exec foreman run rspec"
-alias console="bundle exec foreman run rails console"
 
 # Postgres
 alias psql="'/Applications/Postgres.app/Contents/Versions/9.5/bin'/psql -p5432"
