@@ -1,12 +1,5 @@
-# Add `~/bin` to the `$PATH`
-export PATH="/usr/local/bin:$PATH"
-export PATH="$HOME/bin:$PATH:/usr/local/sbin"
-# export PATH="$HOME/.rbenv/bin:$PATH" # removed since switching to RVM
-
-# Load the shell dotfiles, and then some:
-# * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
-for file in ~/.{path,bash_prompt,aliases,exports,functions,extra}; do
+for file in ~/.{bash_prompt,aliases,functions}; do
 	[ -r "$file" ] && source "$file"
 done
 unset file
@@ -34,29 +27,17 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 [ -f /etc/bash_completion ] && source /etc/bash_completion[[ -s /Users/gklinsing/.nvm/nvm.sh ]] && . /Users/gklinsing/.nvm/nvm.sh # This loads NVM
 
 # add Node Version Manager to bash
-# . ~/.nvm/nvm.sh
+export NVM_DIR="$HOME/.nvm"
+. "$(brew --prefix nvm)/nvm.sh"
 
 # setup postgres paths
 export PGHOST=localhost
 PATH="/Applications/Postgres.app/Contents/Versions/9.5/bin:$PATH"
 
-# rbenv - https://github.com/sstephenson/rbenv
-# eval "$(rbenv init -)" # removed since switching to RVM
+# Add tab completion to git
+source ~/init/git-completion.bash
 
-# [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-# Load RVM into a shell session *as a function*
-if [[ -s "$HOME/.rvm/scripts/rvm" ]] ; then
+# set the default git editor
+export GIT_EDITOR=nano
 
-	# First try to load from a user install
-	source "$HOME/.rvm/scripts/rvm"
-
-elif [[ -s "/usr/local/rvm/scripts/rvm" ]] ; then
-
-	# Then try to load from a root install
-	source "/usr/local/rvm/scripts/rvm"
-
-else
-
-	printf "ERROR: An RVM installation was not found.\n"
-
-fi
+[[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
