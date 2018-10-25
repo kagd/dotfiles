@@ -10,7 +10,7 @@
 
 ##### VS Code Packages/Themes
 - Align
-- Auto Import - ES^, TS, JSX, TSX
+- Auto Import - ES6, TS, JSX, TSX
 - Beautify
 - EditorConfig for VSCode
 - ESlint
