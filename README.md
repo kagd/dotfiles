@@ -10,16 +10,18 @@
 
 ##### Atom Packages/Themes
 - Align
+- Auto Import - ES^, TS, JSX, TSX
 - Beautify
 - EditorConfig for VSCode
 - ESlint
-- grant-monokai
+- git-blamer
+- GitLens
+- Markdown All in One
 - Prettify JSON
 - Seti-theme
-- theme-dark-monokai
 - TSLint
 
-##### Atom Snippets
+##### Snippets
 Open settings then open config folder: [Snippets here](https://github.com/kagd/dotfiles/blob/master/init/snippets.cson)
 
 ### SSH Keys
@@ -32,10 +34,6 @@ Copy key to clipboard
 Add key to Github
 `https://github.com/settings/ssh`
 
-### RVM
-
-[http://rvm.io/](http://rvm.io/)
-
 ### Terminal
 
 ```
@@ -47,6 +45,12 @@ source bootstrap.sh
 ### git
 Follow the instructions here for git autocomplete
 [https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks](https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks)
+
+### Docker
+
+[Download](https://store.docker.com/editions/community/docker-ce-desktop-mac)
+
+## The following may not be needed anymore if using Docker for all
 
 ### Postgres App
 
