@@ -1,0 +1,46 @@
+{
+	"describe": {
+    "prefix": "describe",
+    "body": [
+      "describe('$1', function(){",
+      "\t$0",
+      "});"
+    ]
+	},
+  "context": {
+    "prefix": "context",
+    "body": [
+      "context('when $1', function(){",
+        "\t$0",
+      "});"
+    ]
+  },
+  "it": {
+    "prefix": "it",
+    "body": [
+      "it('should $1', function(){",
+        "\t$0",
+      "});"
+    ]
+	},
+  "beforeEach": {
+    "prefix": "before",
+    "body": [
+      "beforeEach(function(){",
+        "\t$1",
+      "});"
+    ]
+	},
+  "afterEach": {
+    "prefix": "after",
+    "body": [
+      "afterEach(function(){",
+        "\t$1",
+      "});"
+		]
+	},
+	"console.log": {
+		"prefix": "log",
+		"body": "console.log($1);"
+  }
+}

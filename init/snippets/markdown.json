@@ -1,0 +1,19 @@
+{
+	"Get file name": {
+		"prefix": "name",
+		"body": [
+			"${TM_FILENAME/(.*)\\..+$/$1/}"
+		],
+		"description": "add the filename"
+	},
+	"Notes template": {
+		"prefix": "notes",
+		"body": [
+			"# ${TM_FILENAME/(.*)\\..+$/$1/}$1",
+			"\n## TODO\n$0",
+			"\n## DONE",
+			"\n## NOTES"
+		],
+		"description": "template for notes"
+	}
+}

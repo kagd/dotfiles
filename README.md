@@ -21,8 +21,12 @@
 - Seti-theme
 - TSLint
 
+##### VS Code Theme
+
+Dark+ (default)
+
 ##### Snippets
-Open settings then open config folder: [Snippets here](https://github.com/kagd/dotfiles/blob/master/init/snippets.cson)
+[Snippets here](https://github.com/kagd/dotfiles/blob/master/init/snippets)
 
 ### SSH Keys
 
@@ -70,4 +74,8 @@ This line will have to be updated to the installed version of pg and the locatio
 Then run:
 
 `brew doctor`
+
+#### Install NVM
+
+`brew install nvm`
 

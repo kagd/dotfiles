@@ -1,0 +1,73 @@
+{
+	"describe": {
+    "prefix": "describe",
+    "body": [
+      "describe('$1', function() {",
+      "\t$0",
+      "});"
+    ]
+  },
+  "context": {
+    "prefix": "context",
+    "body": [
+      "context('when $1', function(){",
+        "\t$0",
+      "});"
+    ]
+  },
+  "it": {
+    "prefix": "it",
+    "body": [
+      "it('should $1', function() {",
+        "\t$0",
+      "});"
+    ]
+	},
+  "beforeEach": {
+    "prefix": "before",
+    "body": [
+      "beforeEach(function() {",
+        "\t$1",
+      "});"
+    ]
+	},
+  "afterEach": {
+    "prefix": "after",
+    "body": [
+      "afterEach(function() {",
+        "\t$1",
+      "});"
+		]
+	},
+	"console.log": {
+		"prefix": "log",
+		"body": "console.log($1);"
+	},
+	"test setup": {
+		"prefix": "test",
+		"body": [
+			"import { expect } from 'chai';",
+			"import { createSandbox } from '../${1:../}test_utils/sandboxHelpers';",
+			"import ${TM_FILENAME}$2 from '../${TM_FILENAME}$2';",
+			"\ndescribe('${TM_FILENAME}$2', function() {",
+				"\tconst getSandbox = createSandbox();",
+      	"\t$0",
+      "});"
+    ]
+	},
+	"expect": {
+		"prefix": "expect",
+		"body": "expect($1).to.${0:be.true};"
+  },
+  "requiredProps": {
+    "prefix": "rp",
+    "body": [
+      "function requiredProps( overrides = {} ) {",
+        "\treturn {",
+        "\t\t$1",
+        "\t\t...overrides,",
+        "\t};",
+      "}"
+    ]
+  }
+}
