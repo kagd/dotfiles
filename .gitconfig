@@ -41,8 +41,11 @@
 	# Get the number of unpushed commits
 	unpushed = !GIT_CURRENT_BRANCH=$(git name-rev --name-only HEAD) && git log origin/$GIT_CURRENT_BRANCH..$GIT_CURRENT_BRANCH --oneline
 
-	# remove all *merged* local branches, minus the current one
-	brm = !"git branch | grep -v ^* | xargs git branch -d"
+	# remove all local branches, minus the current one and development
+	cleanlocal = !"git branch | grep -v ^* | grep -v development | xargs git branch -d"
+
+	# remove all remote branches, minus the current one and development
+	cleanorigin = !"git branch | grep -v ^* | grep -v development | xargs git push --delete origin"
 
 	# find a file by name
 	find = !"git ls-files | grep -i"
