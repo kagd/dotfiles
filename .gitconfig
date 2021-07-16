@@ -44,7 +44,7 @@
 	# remove all local branches, minus the current one and development
 	cleanlocal = !"git branch | grep -v ^* | grep -v development | xargs git branch -d"
 
-	# remove all remote branches, minus the current one and development
+  # remove all remote branches, minus the current one and development
 	cleanorigin = !"git branch | grep -v ^* | grep -v development | xargs git push --delete origin"
 
 	# find a file by name
@@ -52,6 +52,8 @@
 
 	# clear uncommited changes
 	cleanout = !"git checkout -- ."
+
+	br = "!create_upstream_branch() { git fetch upstream && git checkout upstream/development && git checkout -b $1; }; create_upstream_branch"
 
 [core]
 	# Use custom `.gitignore`
@@ -78,6 +80,13 @@
 	log = true
 [user]
 	name = Grant Klinsing
-	email = grant@grantrklinsing.com
+	email = klingra@chrobinson.com
 [mergetool]
 	keepBackup = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[pull]
+	rebase = false
