@@ -1,0 +1,93 @@
+{
+  "describe": {
+    "prefix": "describe",
+    "scope": "javascript,typescript,typescriptreact",
+    "body": [
+      "describe('$1', () => {",
+      "\t$0",
+      "});"
+    ]
+  },
+  "context": {
+    "prefix": "context",
+    "scope": "javascript,typescript,typescriptreact",
+    "body": [
+      "context('when $1', () => {",
+      "\t$0",
+      "});"
+    ]
+  },
+  "it": {
+    "prefix": "it",
+    "scope": "javascript,typescript,typescriptreact",
+    "body": [
+      "it('$1', () => {",
+      "\t$0",
+      "});"
+    ]
+  },
+  "beforeEach": {
+    "prefix": "before",
+    "scope": "javascript,typescript,typescriptreact",
+    "body": [
+      "beforeEach(() => {",
+      "\t$1",
+      "});"
+    ]
+  },
+  "console.log": {
+    "prefix": "log",
+    "scope": "javascript,typescript,typescriptreact",
+    "body": "console.log($1)"
+  },
+  "expect": {
+    "prefix": "expect",
+    "scope": "javascript,typescript,typescriptreact",
+    "body": "expect($1).to${0:Equal}"
+  },
+  "shallow": {
+    "prefix": "shallow",
+    "scope": "javascript,typescript,typescriptreact",
+    "body": "const wrapper = shallow(<${1:${TM_FILENAME_BASE/(.*)\\..+$/$1/}} />);"
+  },
+  "requiredProps": {
+    "prefix": "rp",
+    "scope": "javascript,typescript,typescriptreact",
+    "body": [
+      "const requiredProps = ( overrides = {} ) => {",
+      "\treturn {",
+      "\t\t$1",
+      "\t\t...overrides,",
+      "\t};",
+      "}"
+    ]
+  },
+  "component init": {
+    "prefix": "init",
+    "scope": "typescript,typescriptreact",
+    "body": [
+      "import React from 'react';\n",
+      "interface $1Props {",
+      "\t$0",
+      "}\n",
+      "export function ${1:${TM_FILENAME_BASE/(.*)\\..+$/$1/}}(props: $1Props) {",
+      "\treturn (",
+      "\t\t<div />",
+      "\t);",
+      "};"
+    ]
+  },
+  "test init": {
+    "prefix": "test",
+    "scope": "typescript,typescriptreact",
+    "body": [
+      "import React from 'react';",
+      "import { shallow } from 'enzyme';",
+      "import { render } from '@testing-library/react';",
+      "import { ${9:${TM_FILENAME_BASE/(.*)\\..+$/${1:/capitalize}/}} } from './${TM_FILENAME_BASE/(.*)\\..+$/$1/}';",
+      "\ndescribe('${9/[\\{\\s\\}]*//g}', () => {",
+      "\t$0",
+      "});\n"
+    ]
+  },
+}
