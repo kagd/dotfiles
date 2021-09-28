@@ -1,33 +1,5 @@
 # Initial setup of your mac
 
-### FireFox
-
-[https://www.firefox.com](https://www.firefox.com)
-
-### VS Code
-
-[https://code.visualstudio.com/](https://code.visualstudio.com/)
-
-##### VS Code Packages/Themes
-- Align
-- Auto Import - ES6, TS, JSX, TSX
-- Beautify
-- EditorConfig for VSCode
-- ESlint
-- git-blamer
-- GitLens
-- Markdown All in One
-- Prettify JSON
-- Seti-theme
-- TSLint
-
-##### VS Code Theme
-
-Dark+ (default)
-
-##### Snippets
-[Snippets here](https://github.com/kagd/dotfiles/blob/master/init/snippets)
-
 ### SSH Keys
 
 `ssh-keygen -t rsa -C "your_email@youremail.com"`
@@ -49,10 +21,6 @@ source bootstrap.sh
 ### git
 Follow the instructions here for git autocomplete
 [https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks](https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks)
-
-### Docker
-
-[Download](https://store.docker.com/editions/community/docker-ce-desktop-mac)
 
 ### Homebrew - [website](http://mxcl.github.com/homebrew/)
 
