@@ -4,10 +4,9 @@
 
 [Profile](./profile.ps1)
 
-### git bash
-
-[Download](https://git-scm.com/downloads)
-
 ### Chocolatey
 
 [Download](https://chocolatey.org/)
+
+### Posh Git
+[https://github.com/dahlbyk/posh-git](https://github.com/dahlbyk/posh-git)
