@@ -22,6 +22,11 @@ source bootstrap.sh
 Follow the instructions here for git autocomplete
 [https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks](https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks)
 
+### Reverse Scroller
+Natural scrolling for trackpad, but reverse for mouse
+
+[https://pilotmoon.com/scrollreverser/](https://pilotmoon.com/scrollreverser/)
+
 ### Homebrew - [website](http://mxcl.github.com/homebrew/)
 
 `ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"`
