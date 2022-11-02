@@ -10,6 +10,19 @@ Copy key to clipboard
 Add key to Github
 `https://github.com/settings/ssh`
 
+### Oh My ZSH
+[https://ohmyz.sh/](https://ohmyz.sh/)
+
+.zshrc
+```
+ZSH_THEME="jonathan"
+ENABLE_CORRECTION="true"
+
+# Assumes you have copied over the .aliases and .functions from this repo
+source ~/.aliases
+source ~/.functions
+```
+
 ### Terminal
 
 ```
